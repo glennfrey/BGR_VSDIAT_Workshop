@@ -1,5 +1,5 @@
 # Bandgap Reference
-![App Screenshot](/public/images/VSD_IAT.jpeg)
+![](bgr_workshop.png)
 # Bandgap Voltage Reference using sky130nm PDK
 
 Bandgap reference circuit
