@@ -185,7 +185,7 @@ plot v(ra1) v(qp2) v(ra1)-v(qp2)
 .end
 ```
 And to simulate this netlist, type ngspice ptat_voltage_gen_ideal_current_source.sp. Now we the see the corresponding waveform after the simulation
-![](bgr_workshop/prelayout/ctat_cur.png)
+![](bgr_workshop/prelayout/ptat_cir.png)
 ## PTAT Voltage generation with VCVS
 ![](bgr_workshop/prelayout/ctat_cur.png)
 In this simulation, the main objective is to check the amplified PTAT voltage using one VCVS. The spice netlist which we are going to simulate is,
@@ -230,7 +230,7 @@ plot vid1#branch vid2#branch
 .end
 ```
 And to simulate this netlist, type ngspice ptat_voltage_gen.sp. Now we the see the corresponding waveform after the simulation
-![](bgr_workshop/prelayout/ctat_cur.png)
+![](bgr_workshop/prelayout/ptat_vcvs.png)
 ## Resistance tempco.
 The voltage across the resistor also increases with increase in the temperature, which makes the resistor similar to PTAT. The main objective of this simulation is to check the tempco. of resistor using ideal current source of 10uA. The spice netlist which we are going to simulate is,
 ```
@@ -263,7 +263,7 @@ plot v(ra1)/vid#branch
 .end
 ```
 And to simulate this netlist, type ngspice res_tempco.sp. Now we the see the corresponding waveform after the simulation
-![](bgr_workshop/prelayout/ctat_cur.png)
+![](bgr_workshop/prelayout/res_tempco.png)
 To find the PTAT voltages across the resistance for different current values from the following curve we have to simulate the netlist res_tempco_var_current.sp
 ```
 **** RES tempco circuit *****
@@ -294,7 +294,7 @@ plot v(ra1)/vid#branch
 .endc
 .end
 ```
-![](bgr_workshop/prelayout/ctat_cur.png)
+![](bgr_workshop/prelayout/res_tempco_var_i.png)
 ## BGR using Ideal Opamp
 To simulate the BGR behaviour using one VCVS as an ideal OpAmp, we have to simulate the netlist bgr_using_ideal_opamp.sp
 ```
@@ -370,7 +370,7 @@ plot v(ref)
 .endc
 .end
 ```
-![](bgr_workshop/prelayout/ctat_cur.png)
+![](bgr_workshop/prelayout/ideal_bgr.png)
 ## BGR with SBCM
 Let's replace the ideal Op-Amp with self-biased current mirror which is our proposed design and observe. The expected output is of that which in case of ideal OpAmp based BGR. Now lets check Behaviour of the circuit in TT corner using the spice netlist bgr_lvt_rpolyh_3p40.sp
 ```
@@ -451,7 +451,7 @@ plot v(vref)
 .endc
 .end
 ```
-![](bgr_workshop/prelayout/ctat_cur.png)
+![](bgr_workshop/prelayout/bgr_tt.png)
 ## Layout Design
 The Layout Design for the sub circuits are done magic tool. The invoke the magic tool for new design, the command to type is,
 ```
@@ -466,28 +466,26 @@ W=5 L=1
 ![](bgr_workshop/layout/nfet1_mag.png)
 ## Design of PFET
 W=5 L=2
-![](bgr_workshop/layout/nfet1_mag.png)
+![](bgr_workshop/layout/pfet_mag.png)
 ## Design of Resistor
 poly resistors of W=1.41 L=7.8
 ![](bgr_workshop/layout/res1p41_mag.png)
 ## Design of PNP (BJT)
 ![](bgr_workshop/layout/images/pnpt1.png)
-## Design of PFET
-W=5 L=2
-![](bgr_workshop/layout/nfet1_mag.png)
+
 ## Block Design
 ## Design of NFETs
-![](bgr_workshop/prelayout/nfets_mag2.png)
+![](bgr_workshop/layout/nfets_mag2.png)
 ## Design of PFETs
-![](bgr_workshop/prelayout/pfets_mag2.png)
+![](bgr_workshop/layout/pfets_mag2.png)
 ## Design of RESBANK
-![](bgr_workshop/prelayout/resbank_mag2.png)
+![](bgr_workshop/layout/resbank_mag2.png)
 ## Design of PNP10
-![](bgr_workshop/prelayout/pnp10_mag.png)
+![](bgr_workshop/layout/pnp10_mag.png)
 ## Design of STARTERNFET
-![](bgr_workshop/prelayout/startemfet_mag.png)
+![](bgr_workshop/layout/startemfet_mag.png)
 ## Top level design
-![](bgr_workshop/prelayout/top_mag2.png)
+![](bgr_workshop/layout/top_mag2.png)
 ## Author
 ## Acknowledgement
 
