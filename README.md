@@ -214,7 +214,6 @@ plot v(ra1) v(qp2) v(ra1)-v(qp2)
 And to simulate this netlist, type ngspice ptat_voltage_gen_ideal_current_source.sp. Now we the see the corresponding waveform after the simulation
 ![](bgr_workshop/prelayout/ptat_cir.png)
 ## PTAT Voltage generation with VCVS
-![](bgr_workshop/prelayout/ctat_cur.png)
 In this simulation, the main objective is to check the amplified PTAT voltage using one VCVS. The spice netlist which we are going to simulate is,
 ```
 **** ptat voltage generation circuit *****
