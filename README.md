@@ -1,6 +1,5 @@
-# Bandgap Reference
-![](bgr_workshop.png)
 # Bandgap Voltage Reference using sky130nm PDK
+![](bgr_workshops.png)
  - [Day 1: Bandgap Design Theory](#Day1)
   * [Introduction to BGR](#Introduction-to-BGR)
   * [BGR Principle](#BGR-Principle)
